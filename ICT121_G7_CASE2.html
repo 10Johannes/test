@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>Multiple Styles</title>
+	<link id = "link" rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body onload="createRain()"><section id="rain" class="rain"></section>
+	<div class='radial'>
+  <ul>
+    <li id="none"><a href='#'>None</a></li>  
+    <li id="burn" onclick="left()"><a href='#'>Fire</a></li>
+    <li id="water" onclick="left()"><a href='#'>Water</a></li>
+    <li id="space" onclick="left()"><a href='#'>Space</a></li>
+    <li id="joker" onclick="left()"><a href='#'>Joker</a></li>
+    <li id="dream" onclick="right()"><a href='#'>Dream</a></li>
+    <li id="avatar" onclick="right()"><a href='#'>Avatar</a></li>
+    <li id="8bit" onclick="right()"><a href='#'>8bit</a></li> 
+  </ul>
+</div>
+	<audio id = "audio" autoplay loop><source src="audio/silence.mp3"></audio>
+	<div class="container">
+	<marquee id = "marquee1" direction = left scrollamount = 10 behavior = scrolling><img id="img1" src = "" style="width:250px;"></marquee>
+	<div id="card">
+	<center><h1 color="white"><span id="blue">Multiple Style Sheets</span><span id="violet"></span></h1></center>
+	<br>
+	<br>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend sem eget rutrum mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi eget augue ligula. Pellentesque nec iaculis dui. Donec tempor, mauris sed condimentum auctor, libero dui facilisis felis, et blandit erat velit quis eros. Mauris a mattis velit, a dignissim nulla. Nam rhoncus lacus vitae vehicula placerat.
+	</p>
+
+	<p>Suspendisse vitae ex pulvinar, bibendum augue et, elementum libero. Nunc eget urna in urna lacinia blandit in vel arcu. Maecenas quis gravida neque. Etiam sagittis, turpis vel luctus maximus, enim magna tempus magna, sed elementum orci odio quis turpis. Suspendisse sit amet dolor vestibulum, sagittis odio ut, varius nulla. Curabitur diam neque, auctor et eleifend in, bibendum vel lectus. Cras sagittis turpis at lacus ornare, sit amet suscipit libero dictum. Duis quis fermentum leo. Donec sed dolor quis nisl semper pharetra at vitae enim. Vivamus pellentesque ut dolor ut eleifend. Suspendisse interdum sapien eget orci varius, id viverra nibh porta. Curabitur nec dapibus velit. Nulla orci nibh, pulvinar eu condimentum vitae, aliquet at diam. Morbi elit magna, vehicula sed metus a, placerat vulputate ante. Morbi maximus luctus quam, vitae ornare odio.</p>
+
+	<p>Aliquam imperdiet nulla vitae purus pharetra sodales. Suspendisse vel nibh semper ligula condimentum pretium eget id massa. Curabitur pellentesque fringilla dui, sit amet congue velit. Morbi gravida odio at fermentum fermentum. Fusce malesuada dui eu dui finibus, sit amet malesuada neque rutrum. Sed interdum turpis ac enim rhoncus malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer auctor vel orci at cursus. Aenean eu lorem tellus. 
+	</p>
+
+	<p>Phasellus sed dui facilisis velit lobortis viverra vitae quis ex. Pellentesque consequat, nisi eget sodales bibendum, dui mi convallis nisi, quis maximus magna lectus eget mauris. In hac habitasse platea dictumst. Donec id magna ut nulla scelerisque tincidunt ut ac turpis. Sed est nunc, lacinia a libero laoreet, posuere suscipit erat. Ut eleifend dolor quis purus commodo lacinia. Donec bibendum purus non ex volutpat, nec pellentesque turpis pretium. 
+	</p>
+
+	<p>Integer leo risus, semper a tristique auctor, suscipit sit amet dolor. Morbi porta semper leo et consectetur. Curabitur blandit, nisi eu condimentum gravida, nisi libero dictum metus, quis vulputate tellus enim ut mauris. Maecenas orci tellus, placerat et velit a, placerat cursus ligula. Duis consectetur odio ante, at finibus tellus mollis vel. Cras eget massa quis mauris condimentum venenatis vel sit amet nulla. In scelerisque, purus ut aliquam rutrum, leo felis congue diam, et tristique dui nulla elementum ipsum. Sed ut augue vitae metus tristique consequat ultricies ac lorem. Phasellus condimentum finibus est ac cursus. 
+	</p>
+</div>
+	<marquee id = "marquee2" direction = left scrollamount = 10 behavior = scrolling><img id="img2" src = "" style="width:250px;"><img id="img3" src = "" style="width:250px;"><img id="img4" src = "" style="width:250px;"><img id="img5" src = "" style="width:250px;"></marquee>
+</div>
+	<script type="text/javascript" charset="utf-8" src="js/fire.js"></script>	
+	<canvas width="320" height="70" id="fire" style="width : 100%;"/>
+	<script type="text/javascript" src="js/main.js"></script>
+	<iframe src="audio/silence.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</body>
+</html>
